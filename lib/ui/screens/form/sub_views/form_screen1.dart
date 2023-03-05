@@ -3,7 +3,6 @@ import 'package:stacked/stacked.dart';
 
 import '../../../../utils/data_helper.dart';
 import '../../../../utils/date_formatter.dart';
-import '../../../../utils/nigerian_states_and_lga.dart';
 import '../../../../utils/split_helper.dart';
 import '../../../layout/widgets/custom_textfieldX.dart';
 import '../../../responsive.dart';
