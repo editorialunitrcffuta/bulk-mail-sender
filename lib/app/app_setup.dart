@@ -22,7 +22,7 @@ import '../ui/screens/welcome_screen.dart';
     LazySingleton(classType: SnackbarService),
     LazySingleton(classType: MainScreenViewModel),
     LazySingleton(classType: DatabaseService),
-    LazySingleton(classType: WidowsRepo)
+    LazySingleton(classType: GetUsersListRepo)
   ],
   logger: StackedLogger(),
 )

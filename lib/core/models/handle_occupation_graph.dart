@@ -4,7 +4,7 @@ import 'widow/widow.dart';
 import 'widow/widow_data_model.dart';
 
 class HandleOccupationGraph {
-  List<Widow> widowData;
+  List<MembersModel> widowData;
   List<WidowDataModel>? graphModel;
   List<String>? occupation;
   List<int>? occupationLength;

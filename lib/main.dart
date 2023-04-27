@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
         scrollbarTheme: Styles.scrollbarTheme,
       ),
       navigatorKey: StackedService.navigatorKey,
-      onGenerateRoute: (settings) => StackedRouter().onGenerateRoute(settings),
+      onGenerateRoute: StackedRouter().onGenerateRoute,
       initialRoute: Routes.welcomeScreen,
     );
   }

@@ -7,7 +7,7 @@ import '../../../utils/data_helper.dart';
 part 'widow.g.dart';
 
 @JsonSerializable(explicitToJson: true)
-class Widow extends Equatable {
+class MembersModel extends Equatable {
   String? id;
   String? fullName;
   DateTime? dob;
@@ -34,7 +34,7 @@ class Widow extends Equatable {
   DateTime? registrationDate;
   int? oneOrTwo;
 
-  Widow(
+  MembersModel(
       {this.id,
       this.fullName,
       this.dob,
@@ -61,7 +61,7 @@ class Widow extends Equatable {
       this.registrationDate,
       this.oneOrTwo});
 
-  factory Widow.fromJson(Map<String, dynamic> json) => _$WidowFromJson(json);
+  factory MembersModel.fromJson(Map<String, dynamic> json) => _$WidowFromJson(json);
 
   Map<String, dynamic> toJson() => _$WidowToJson(this);
 

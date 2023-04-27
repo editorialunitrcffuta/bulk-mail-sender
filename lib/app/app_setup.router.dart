@@ -39,15 +39,6 @@ class StackedRouter extends RouterBase {
   @override
   Map<Type, StackedRouteFactory> get pagesMap => _pagesMap;
   final _pagesMap = <Type, StackedRouteFactory>{
-    // OnBoardingScreen: (data) {
-    //   var args = data.getArgs<OnBoardingScreenArguments>(
-    //     orElse: () => OnBoardingScreenArguments(),
-    //   );
-    //   return MaterialPageRoute<dynamic>(
-    //     builder: (context) => OnBoardingScreen(key: args.key),
-    //     settings: data,
-    //   );
-    // },
     WelcomeScreen: (data) {
       return MaterialPageRoute<dynamic>(
         builder: (context) => const WelcomeScreen(),

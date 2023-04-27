@@ -6,7 +6,7 @@ part of 'widow.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-Widow _$WidowFromJson(Map<String, dynamic> json) => Widow(
+MembersModel _$WidowFromJson(Map<String, dynamic> json) => MembersModel(
       id: json['id'] as String?,
       fullName: json['fullName'] as String?,
       dob: json['dob'] == null ? null : DateTime.parse(json['dob'] as String),
@@ -36,7 +36,7 @@ Widow _$WidowFromJson(Map<String, dynamic> json) => Widow(
       oneOrTwo: json['oneOrTwo'] as int?,
     );
 
-Map<String, dynamic> _$WidowToJson(Widow instance) => <String, dynamic>{
+Map<String, dynamic> _$WidowToJson(MembersModel instance) => <String, dynamic>{
       'id': instance.id,
       'fullName': instance.fullName,
       'dob': instance.dob?.toIso8601String(),

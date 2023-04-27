@@ -4,7 +4,7 @@ import 'widow.dart';
 import 'widow_data_model.dart';
 
 class YOMGraph {
-  List<Widow> widowData;
+  List<MembersModel> widowData;
   List<WidowDataModel>? graphModel;
   List<String>? bereavement; //x-axis
   List<int>? bereavementLength; //Y-axis

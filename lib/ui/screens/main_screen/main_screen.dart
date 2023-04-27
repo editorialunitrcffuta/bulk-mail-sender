@@ -53,7 +53,7 @@ class _MainScreenState extends State<MainScreen> {
                         padding: const EdgeInsets.only(
                             left: 35, top: 70, bottom: 17),
                         child: Text(
-                          'Database',
+                          'Email List',
                           style: databaseStyle10,
                         ),
                       ),
@@ -126,13 +126,13 @@ class _MainScreenState extends State<MainScreen> {
                                         label: Text('Employment'),
                                       ),
                                       DataColumn(
-                                        label: Text('NGO'),
+                                        label: Text('Worker Status'),
                                       ),
                                       DataColumn(
                                         label: Text('LGA'),
                                       ),
                                       DataColumn(
-                                        label: Text('Children'),
+                                        label: Text('Members'),
                                       ),
                                       DataColumn(
                                         label: Text('Sen. District'),

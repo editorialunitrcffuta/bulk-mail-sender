@@ -71,8 +71,8 @@ class DatabaseService {
   }
 }
 
-List<Widow> demoData = [
-  Widow(
+List<MembersModel> demoData = [
+  MembersModel(
       id: "ANE000082",
       fullName: "Jayeola Idayat",
       dob: DateTime.parse("1974-01-01 00:00:00.000"),
@@ -98,7 +98,7 @@ List<Widow> demoData = [
       receivedBy: null,
       registrationDate: DateTime.parse('2020-01-30 00:00:00.000'),
       oneOrTwo: null),
-  Widow(
+  MembersModel(
       id: "ANE000010",
       fullName: "Yemisi Sulaiman",
       dob: DateTime.parse("1940-01-09 00:00:00.000"),
@@ -124,7 +124,7 @@ List<Widow> demoData = [
       receivedBy: "None",
       registrationDate: DateTime.parse('2020-01-25 00:00:00.000'),
       oneOrTwo: null),
-  Widow(
+  MembersModel(
       id: "ANE000715",
       fullName: "JIMOH ASHAHU",
       dob: DateTime.parse("1952-01-03 00:00:00.000"),
@@ -150,7 +150,7 @@ List<Widow> demoData = [
       receivedBy: "P",
       registrationDate: DateTime.parse("2020-01-01 00:00:00.000"),
       oneOrTwo: null),
-  Widow(
+  MembersModel(
       id: "ANE000811",
       fullName: "ADENOLA ABEKE SIFAU",
       dob: DateTime.parse("1945-01-01 00:00:00.000"),
@@ -176,7 +176,7 @@ List<Widow> demoData = [
       receivedBy: null,
       registrationDate: DateTime.parse("2020-01-21 00:00:00.000"),
       oneOrTwo: 1),
-  Widow(
+  MembersModel(
       id: "ANE000117",
       fullName: "Osene Kemi Favour",
       dob: DateTime.parse("1987-01-23 00:00:00.000"),
@@ -202,7 +202,7 @@ List<Widow> demoData = [
       receivedBy: null,
       registrationDate: DateTime.parse("2020-01-03 00:00:00.000"),
       oneOrTwo: null),
-  Widow(
+  MembersModel(
       id: "ANE000776",
       fullName: "Ayodele Janet",
       dob: DateTime.parse("1955-01-18 00:00:00.000"),
@@ -229,7 +229,7 @@ List<Widow> demoData = [
       receivedBy: null,
       registrationDate: DateTime.parse("2020-01-10 00:00:00.000"),
       oneOrTwo: null),
-  Widow(
+  MembersModel(
       id: "ANE000806",
       fullName: "ALETILE AYISAT",
       dob: DateTime.parse("1943-01-01 00:00:00.000"),
@@ -255,7 +255,7 @@ List<Widow> demoData = [
       receivedBy: null,
       registrationDate: DateTime.parse("2020-01-21 00:00:00.000"),
       oneOrTwo: null),
-  Widow(
+  MembersModel(
       id: "ANE000480",
       fullName: "OLOGBOGI RAMOTA",
       dob: DateTime.parse("1960-01-21 00:00:00.000"),
@@ -281,7 +281,7 @@ List<Widow> demoData = [
       receivedBy: "SELF",
       registrationDate: DateTime.parse("2020-01-17 00:00:00.000"),
       oneOrTwo: null),
-  Widow(
+  MembersModel(
       id: "ANE000637",
       fullName: "Adubiaro abiola",
       dob: DateTime.parse("1977-01-10 00:00:00.000"),
@@ -307,7 +307,7 @@ List<Widow> demoData = [
       receivedBy: null,
       registrationDate: DateTime.parse("2020-01-28 00:00:00.000"),
       oneOrTwo: null),
-  Widow(
+  MembersModel(
       id: "ANE000173",
       fullName: "AGUNBIADE CAROLINE",
       dob: DateTime.parse("1967-01-01 00:00:00.000"),
@@ -333,7 +333,7 @@ List<Widow> demoData = [
       receivedBy: "SELF",
       registrationDate: DateTime.parse("2020-01-22 00:00:00.000"),
       oneOrTwo: null),
-  Widow(
+  MembersModel(
       id: "ANE000517",
       fullName: "OGUNROTIFA VICTORIA",
       dob: DateTime.parse("1958-01-11 00:00:00.000"),
@@ -360,7 +360,7 @@ List<Widow> demoData = [
       receivedBy: null,
       registrationDate: DateTime.parse("2020-01-18 00:00:00.000"),
       oneOrTwo: null),
-  Widow(
+  MembersModel(
       id: "ANE000159",
       fullName: "AROWOLO KEMISOLA SELIMO",
       dob: DateTime.parse("1986-01-09 00:00:00.000"),
@@ -386,7 +386,7 @@ List<Widow> demoData = [
       receivedBy: "SELF",
       registrationDate: DateTime.parse("2020-01-22 00:00:00.000"),
       oneOrTwo: null),
-  Widow(
+  MembersModel(
       id: "ANE000304",
       fullName: "OSHODI TAIBAT OLANIKE",
       dob: DateTime.parse("1972-01-05 00:00:00.000"),
@@ -412,7 +412,7 @@ List<Widow> demoData = [
       receivedBy: "SELF",
       registrationDate: DateTime.parse("2020-01-11 00:00:00.000"),
       oneOrTwo: null),
-  Widow(
+  MembersModel(
       id: "ANE000222",
       fullName: "ADU OSEYEMI",
       dob: DateTime.parse("1970-01-10 00:00:00.000"),
@@ -438,7 +438,7 @@ List<Widow> demoData = [
       receivedBy: "SELF",
       registrationDate: DateTime.parse("2020-01-11 00:00:00.000"),
       oneOrTwo: null),
-  Widow(
+  MembersModel(
       id: "ANE000289",
       fullName: "ALOKO MERCY KIKELOMO",
       dob: DateTime.parse("1983-01-13 00:00:00.000"),
@@ -464,7 +464,7 @@ List<Widow> demoData = [
       receivedBy: "SELF",
       registrationDate: DateTime.parse("2020-01-11 00:00:00.000"),
       oneOrTwo: 1),
-  Widow(
+  MembersModel(
       id: "ANE000828",
       fullName: "Oginni  F Kemi",
       dob: DateTime.parse("1983-01-16 00:00:00.000"),
@@ -491,7 +491,7 @@ List<Widow> demoData = [
       receivedBy: null,
       registrationDate: DateTime.parse("2020-01-23 00:00:00.000"),
       oneOrTwo: null),
-  Widow(
+  MembersModel(
       id: "ANE000607",
       fullName: "SALAU BIKEMI FATIMOH",
       dob: DateTime.parse("1965-01-28 00:00:00.000"),
@@ -517,7 +517,7 @@ List<Widow> demoData = [
       receivedBy: "SELF",
       registrationDate: DateTime.parse("2020-01-25 00:00:00.000"),
       oneOrTwo: null),
-  Widow(
+  MembersModel(
       id: "ANE000487",
       fullName: "AREMU SILIAT",
       dob: DateTime.parse("1958-01-23 00:00:00.000"),
@@ -543,7 +543,7 @@ List<Widow> demoData = [
       receivedBy: "SELF",
       registrationDate: DateTime.parse("2020-01-17 00:00:00.000"),
       oneOrTwo: null),
-  Widow(
+  MembersModel(
       id: "ANE000333",
       fullName: "EUNICE EKUNDAYO OGUNTUASE",
       dob: DateTime.parse("1937-01-08 00:00:00.000"),
@@ -569,7 +569,7 @@ List<Widow> demoData = [
       receivedBy: "SELF",
       registrationDate: DateTime.parse("2020-01-12 00:00:00.000"),
       oneOrTwo: null),
-  Widow(
+  MembersModel(
       id: "ANE000054",
       fullName: "Grace Nathaniel",
       dob: DateTime.parse("1944-01-27 00:00:00.000"),

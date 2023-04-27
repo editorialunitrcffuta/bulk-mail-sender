@@ -141,13 +141,13 @@ class WelcomeTexts extends StatelessWidget {
         ),
         Padding(
           padding: const EdgeInsets.only(top: 50.0, bottom: 10),
-          child: Text('ONDO',
+          child: Text('RCF EDITORIAL UNIT',
               style: Responsive.isMobile(context)
                   ? welcomeStyle1.copyWith(fontSize: 52)
                   : welcomeStyle1),
         ),
         Text(
-          'At-Risk Children Project',
+          'Bulk MAil Sender Project',
           textAlign: TextAlign.center,
           style: Responsive.isMobile(context)
               ? welcomeStyle2.copyWith(fontSize: 24)

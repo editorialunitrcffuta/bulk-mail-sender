@@ -8,14 +8,13 @@ import '../../app/app_setup.locator.dart';
 import '../models/widow/widow.dart';
 import '../services/database_service.dart';
 
-class WidowsRepo {
+class GetUsersListRepo {
   final _store = locator<DatabaseService>();
-  static final WidowsRepo _instance = WidowsRepo._();
-  List<Widow> _widowsData = [];
+  static final GetUsersListRepo _instance = GetUsersListRepo._();
+  List<MembersModel> _widowsData = [];
+  
 
-  // List<AgeRange> _ageRange = [];
-
-  List<Widow> get widowData => _widowsData;
+  List<MembersModel> get widowData => _widowsData;
 
   // Future<List<OccupationDataHolder>> get occupationData {
   //   return compute(extractOccupationData, _widowsData);
@@ -41,50 +40,50 @@ class WidowsRepo {
   //   return compute(extractYearsInMarriageData, _widowsData);
   // }
 
-  WidowsRepo._();
+  GetUsersListRepo._();
 
-  static Future<WidowsRepo> getInstance() async {
+  static Future<GetUsersListRepo> getInstance() async {
     await _instance.initialise();
     return _instance;
   }
 
   Future<void> initialise() async {
-    await getWidowsData();
+    await getMembersData();
   }
 
-  Future<void> getWidowsData() async {
-    print('Getting widows data');
-
-    late List<Map<String, dynamic>> dataJson;
-
-    if (!App.useLocalData) {
-      try {
-        // QuerySnapshot<Map<String, dynamic>> snapshot =
-        //     await _store.getWidowsCollection();
-        //
-        // // await downloadData(snapshot);
-        //
-        // dataJson = snapshot.docs.map((e) => e.data()).toList();
-      } catch (e) {
-        print("Error Occurred while loading data: ${e.toString()}");
-      }
-    } else {
-      String data =
-          await rootBundle.loadString("assets/files/Forged Widows Data.json");
-      dataJson = await compute((String data) {
-        return (jsonDecode(data) as List<dynamic>)
-            .map((e) => e as Map<String, dynamic>)
-            .toList();
-      }, data);
-
-      // await forgeData(dataJson);
-    }
-
-    _widowsData = await compute((List<Map<String, dynamic>> dataJson) {
-      return dataJson.map((data) {
-        return Widow.fromJson(data);
-      }).toList();
-    }, dataJson);
+  Future<void> getMembersData() async {
+    // print('Getting widows data');
+    //
+    // late List<Map<String, dynamic>> dataJson;
+    //
+    // if (!App.useLocalData) {
+    //   // try {
+    //   //   // QuerySnapshot<Map<String, dynamic>> snapshot =
+    //   //   //     await _store.getWidowsCollection();
+    //   //   //
+    //   //   // // await downloadData(snapshot);
+    //   //   //
+    //   //   // dataJson = snapshot.docs.map((e) => e.data()).toList();
+    //   // } catch (e) {
+    //   //   print("Error Occurred while loading data: ${e.toString()}");
+    //   // }
+    // } else {
+    //   String data =
+    //       await rootBundle.loadString("assets/files/Forged Widows Data.json");
+    //   dataJson = await compute((String data) {
+    //     return (jsonDecode(data) as List<dynamic>)
+    //         .map((e) => e as Map<String, dynamic>)
+    //         .toList();
+    //   }, data);
+    //
+    //   // await forgeData(dataJson);
+    // }
+    //
+    // _widowsData = await compute((List<Map<String, dynamic>> dataJson) {
+    //   return dataJson.map((data) {
+    //     return Widow.fromJson(data);
+    //   }).toList();
+    // }, dataJson);
 
     print('Success');
   }
